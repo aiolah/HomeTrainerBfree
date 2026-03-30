@@ -38,6 +38,7 @@ export const timeUnitConv: UnitConv = {
 export const speedUnitConv: UnitConv = {
 	kmph: {
 		name: 'km/h',
+		// Conversion en km/h
 		convTo: (v) => v * 3.6,
 		convToBase: (v) => v / 3.6, // to m/s
 	},
