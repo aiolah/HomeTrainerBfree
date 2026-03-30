@@ -46,7 +46,7 @@ function App({ Component, pageProps }) {
 
 		// Initialiser MQTT au démarrage
 		// Recommandé pour EMQX : wss://broker.emqx.io:8084/mqtt
-		const brokerUrl = localStorage.getItem('mqttBrokerUrl') || 'ws://broker.emqx.io:8083/mqtt';
+		const brokerUrl = localStorage.getItem('mqttBrokerUrl') || 'ws://192.168.0.227:9001/mqtt';
 		connectMQTT(brokerUrl).catch((err) => console.error('Failed to connect to MQTT:', err));
 
 		return () => {
